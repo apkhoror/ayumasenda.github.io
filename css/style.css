@@ -1,0 +1,92 @@
+html {
+  position: relative;
+}
+
+body {
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.jumbotron {
+  height: 400px;
+  background-image: url(../img/MikasaLevi.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 30;
+  color: white;
+  overflow: hidden;
+}
+
+.jumbotron h1, .jumbotron p{
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+}
+
+.jumbotron img {
+  width: 150px;
+  border: 3px solid white;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.8);;
+}
+
+hr {
+  width: 250px;
+  border-top: 1.5px solid darkblue;
+}
+
+.pSatu, .pDua{
+  opacity: 0;
+  transform: translate(-100px, 0);
+  transition: 10s;
+}
+
+.pDua {
+  transform: translate(100px, 0);
+}
+
+.pSatu.pMuncul, .pDua.pMuncul {
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+section {
+  min-height: 600px;
+}
+
+.portfolio {
+  background-color: #eeee;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.portfolio .thumbnail {
+  margin: 25px 10px;
+  opacity: 0;
+  transform: translate(0, -40px);
+}
+
+.portfolio .muncul {
+  opacity: 100;
+  transform: translate(0, 0);
+  transition: 2s;
+}
+
+.about {
+  padding-top: 30px;
+}
+
+.contact {
+  padding-top: 40px;
+  min-height: 1000px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  padding-top: 23px;
+}
+
+footer p {
+  color: white;
+}
